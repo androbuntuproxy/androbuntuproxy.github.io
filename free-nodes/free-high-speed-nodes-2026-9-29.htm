@@ -363,12 +363,18 @@ INFO[0000] RESTful API listening at: 127.0.0.1:9090
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2026-9-28-free-node-subscribe.htm">Androbuntu Proxy节点 | 9月28日20.4M/S|免费Singbox节点/Clash节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a></p>
+        <p>下一个：<a href="/free-nodes/2026-9-30-clash-v2ray-ss-ssr.htm">Androbuntu Proxy节点 | 9月30日18.1M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a></p>
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何优化 Clash DNS 解析速度？</h5></div>
+    <div class="panel-heading"><h5>Hiddify Next 如何管理不同用户的带宽？</h5></div>
     <div class="panel-body">
-        可在配置文件中启用 fake-ip 模式或使用高质量的 DoH 服务（如 Cloudflare、AliDNS）。同时将 `fallback-filter.geoip` 设置为 true，避免国内域名被错误解析到境外，提高解析效率。<hr />    </div>
+        管理员可以为每个用户设置独立带宽限制和流量配额。超出配额时可自动阻断或降速，确保服务器资源合理分配，避免单用户占用过多带宽，保障整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray PAC 模式如何提高访问速度和便利性？</h5></div>
+    <div class="panel-body">
+        PAC 模式根据规则动态判断流量是否走代理，无需手动切换节点。适合国内外混合访问场景，提高网页和视频访问速度与稳定性，减少操作错误导致的访问失败。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Clash 订阅被墙或无法下载如何绕过？</h5></div>
@@ -376,9 +382,9 @@ INFO[0000] RESTful API listening at: 127.0.0.1:9090
         若订阅源被直接屏蔽，可尝试先在境外服务器上用代理代理获取订阅并通过中转服务器公开一个新的链接；或者使用 HTTPS 与 CDN 中转、或将订阅以文件形式托管在不易被封的云存储上。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray PAC 模式如何提高访问速度和便利性？</h5></div>
+    <div class="panel-heading"><h5>Nekobox 如何管理不同协议节点？</h5></div>
     <div class="panel-body">
-        PAC 模式根据规则动态判断流量是否走代理，无需手动切换节点。适合国内外混合访问场景，提高网页和视频访问速度与稳定性，减少操作错误导致的访问失败。<hr />    </div>
+        Nekobox 可以同时管理 Shadowsocks、VMess、Trojan 等多种协议节点。结合策略组和分流规则，可实现不同流量走不同节点，提升网络效率和管理便利性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 显示配置已加载但无法访问外网，可能原因？</h5></div>
@@ -391,11 +397,6 @@ INFO[0000] RESTful API listening at: 127.0.0.1:9090
         PassWall2 会定期测试节点延迟和丢包率，结合策略组自动切换到最优节点。无需手动干预即可保证网页、视频和游戏流量高速稳定访问，优化整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 如何管理不同用户的带宽？</h5></div>
-    <div class="panel-body">
-        管理员可以为每个用户设置独立带宽限制和流量配额。超出配额时可自动阻断或降速，确保服务器资源合理分配，避免单用户占用过多带宽，保障整体网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 的节点测速结果如何影响分流？</h5></div>
     <div class="panel-body">
         PassWall2 会根据节点延迟和成功率自动调整策略组选择最优节点。测速结果直接影响程序选择出口，从而提高连接速度和稳定性。<hr />    </div>
@@ -406,14 +407,14 @@ INFO[0000] RESTful API listening at: 127.0.0.1:9090
         可以。用户可以设置策略组，PassWall2 会定期测速并根据延迟或成功率自动选择最优节点，实现智能节点切换，保证网络稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 如何管理不同协议节点？</h5></div>
-    <div class="panel-body">
-        Nekobox 可以同时管理 Shadowsocks、VMess、Trojan 等多种协议节点。结合策略组和分流规则，可实现不同流量走不同节点，提升网络效率和管理便利性。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>如何检测并处理订阅中的死节点？</h5></div>
     <div class="panel-body">
-        定期运行批量测速脚本或使用客户端内置的 url-test、health-check 功能，自动标记或移除响应超时或重连失败的节点。结合订阅更新策略可自动替换或提醒用户维护节点列表。    </div>
+        定期运行批量测速脚本或使用客户端内置的 url-test、health-check 功能，自动标记或移除响应超时或重连失败的节点。结合订阅更新策略可自动替换或提醒用户维护节点列表。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何优化 Clash DNS 解析速度？</h5></div>
+    <div class="panel-body">
+        可在配置文件中启用 fake-ip 模式或使用高质量的 DoH 服务（如 Cloudflare、AliDNS）。同时将 `fallback-filter.geoip` 设置为 true，避免国内域名被错误解析到境外，提高解析效率。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -461,16 +462,16 @@ INFO[0000] RESTful API listening at: 127.0.0.1:9090
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/free-v2ray-subscribe-2026-9-27.htm" title="Androbuntu Proxy节点 | 9月27日20.3M/S|免费Singbox节点/V2ray节点/SSR节点/Clash节点/Trojan节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 9月27日20.3M/S|免费Singbox节点/V2ray节点/SSR节点/Clash节点/Trojan节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-16-free-v2ray.htm" title="Androbuntu Proxy节点 | 8月16日21.3M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/Trojan节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 8月16日21.3M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/Trojan节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-28-clash-node-daily-updates.htm" title="Androbuntu Proxy节点 | 8月28日21.8M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 8月28日21.8M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-1.htm" title="Androbuntu Proxy节点 | 9月1日22.7M/S|免费Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 9月1日22.7M/S|免费Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-5.htm" title="Androbuntu Proxy节点 | 9月5日19.2M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 9月5日19.2M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-clash-subscribe-2026-8-17.htm" title="Androbuntu Proxy节点 | 8月17日19.5M/S|免费Trojan节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 8月17日19.5M/S|免费Trojan节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-20-free-node-subscribe.htm" title="Androbuntu Proxy节点 | 9月20日18.8M/S|免费SSR节点/Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 9月20日18.8M/S|免费SSR节点/Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-high-speed-nodes-2026-9-29.htm" title="Androbuntu Proxy节点 | 9月29日19.9M/S|免费Trojan节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 9月29日19.9M/S|免费Trojan节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-high-speed-nodes-2026-9-13.htm" title="Androbuntu Proxy节点 | 9月13日21.8M/S|免费Shadowrocket节点/Trojan节点/SSR节点/Clash节点/Singbox节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 9月13日21.8M/S|免费Shadowrocket节点/Trojan节点/SSR节点/Clash节点/Singbox节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-8-7.htm" title="Androbuntu Proxy节点 | 8月7日22M/S|免费SSR节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 8月7日22M/S|免费SSR节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-24-free-shadowrocket-node.htm" title="Androbuntu Proxy节点 | 9月24日18.8M/S|免费Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 9月24日18.8M/S|免费Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-3.htm" title="Androbuntu Proxy节点 | 9月3日19.3M/S|免费Clash节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 9月3日19.3M/S|免费Clash节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-ssr-node-2026-10-5.htm" title="Androbuntu Proxy节点 | 10月5日18.4M/S|免费Trojan节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 10月5日18.4M/S|免费Trojan节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-26-clash-node.htm" title="Androbuntu Proxy节点 | 9月26日22.6M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 9月26日22.6M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-6-free-clash.htm" title="Androbuntu Proxy节点 | 10月6日21.2M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 10月6日21.2M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-4-free-ssr-subscribe.htm" title="Androbuntu Proxy节点 | 10月4日19M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 10月4日19M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-ssr-node-2026-9-17.htm" title="Androbuntu Proxy节点 | 9月17日20.6M/S|免费Clash节点/Trojan节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 9月17日20.6M/S|免费Clash节点/Trojan节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-14-clash-node.htm" title="Androbuntu Proxy节点 | 9月14日21.6M/S|免费Singbox节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 9月14日21.6M/S|免费Singbox节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-high-speed-nodes-2026-9-9.htm" title="Androbuntu Proxy节点 | 9月9日20.3M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">Androbuntu Proxy节点 | 9月9日20.3M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -482,10 +483,10 @@ INFO[0000] RESTful API listening at: 127.0.0.1:9090
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                     </ul>
     </div>
